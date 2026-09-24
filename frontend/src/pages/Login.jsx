@@ -30,7 +30,7 @@ const handleLogin = async (event) => {
 
     try {
       const response = await fetch(
-        "fetch("https://skillsphere-t975.onrender.com/login",",
+  "https://skillsphere-t975.onrender.com/login",
         {
           method: "POST",
           headers: {
