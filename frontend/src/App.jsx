@@ -5,7 +5,7 @@ import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import InstitutionDashboard from "./pages/InstitutionDashboard";
 import IndustryDashboard from "./pages/IndustryDashboard";
-const API = "http://127.0.0.1:8000";
+const API = "https://skillsphere-t975.onrender.com";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);

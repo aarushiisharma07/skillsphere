@@ -30,7 +30,7 @@ const handleLogin = async (event) => {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/login",
+        "fetch("https://skillsphere-t975.onrender.com/login",",
         {
           method: "POST",
           headers: {
@@ -213,7 +213,7 @@ onChange={(e) => setPassword(e.target.value)}
                     ? "role-card active"
                     : "role-card"
                 }
-             onClick={() => handleRoleSelect("institution")}
+             
                 
               >
                 <div className="role-icon">
