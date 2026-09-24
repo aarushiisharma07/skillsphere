@@ -1,0 +1,392 @@
+/* =========================================
+   SKILL ASSESSMENT
+========================================= */
+
+.assessment-page {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 20px 70px;
+  color: #e2e8f0;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.assessment-header {
+  margin-bottom: 28px;
+}
+
+.assessment-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #60a5fa;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.assessment-header h1 {
+  margin: 0 0 10px;
+  font-size: 36px;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.assessment-header p {
+  margin: 0;
+  max-width: 650px;
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   READINESS
+========================================= */
+
+.readiness-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding: 20px 24px;
+  border-radius: 18px;
+  background: #0f2038;
+  border: 1px solid rgba(96, 165, 250, 0.15);
+}
+
+.readiness-card span {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.readiness-card strong {
+  font-size: 30px;
+  color: #60a5fa;
+}
+
+.readiness-card small {
+  padding: 6px 11px;
+  border-radius: 20px;
+  background: rgba(96, 165, 250, 0.12);
+  color: #93c5fd;
+  font-weight: 700;
+}
+
+/* =========================================
+   SKILLS GRID
+========================================= */
+
+.assessment-skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* =========================================
+   SKILL CARD
+========================================= */
+
+.assessment-skill-card {
+  background: #0f2038;
+  border: 1px solid rgba(96, 165, 250, 0.15);
+  border-radius: 20px;
+  padding: 26px;
+  transition: 0.2s ease;
+}
+
+.assessment-skill-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(96, 165, 250, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   SKILL TOP
+========================================= */
+
+.skill-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #162d4b;
+  border: 1px solid rgba(96, 165, 250, 0.12);
+  font-size: 23px;
+}
+
+.skill-title {
+  flex: 1;
+}
+
+.skill-title h3 {
+  margin: 0 0 6px;
+  color: #f8fafc;
+  font-size: 18px;
+}
+
+.skill-score {
+  color: #cbd5e1;
+  font-size: 27px;
+}
+
+/* =========================================
+   LEVEL BADGES
+========================================= */
+
+.skill-level {
+  display: inline-block;
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.level-advanced {
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+}
+
+.level-intermediate {
+  background: rgba(96, 165, 250, 0.12);
+  color: #60a5fa;
+}
+
+.level-beginner {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+}
+
+.level-needs-improvement {
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+}
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.assessment-progress {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  border-radius: 20px;
+  background: #1b3049;
+}
+
+.assessment-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #60a5fa;
+  transition: width 0.3s ease;
+}
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.skill-slider {
+  width: 100%;
+  height: 5px;
+  appearance: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #29415d;
+  outline: none;
+}
+
+.skill-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #60a5fa;
+  border: 3px solid #0f2038;
+  box-shadow: 0 0 0 2px #60a5fa;
+}
+
+.skill-slider::-moz-range-thumb {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #60a5fa;
+  border: 3px solid #0f2038;
+  box-shadow: 0 0 0 2px #60a5fa;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+/* =========================================
+   ANALYZE BUTTON
+========================================= */
+
+.assessment-submit {
+  display: block;
+  margin: 28px 0 30px auto;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 12px;
+  background: #60a5fa;
+  color: #081525;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.assessment-submit:hover {
+  transform: translateY(-2px);
+  background: #93c5fd;
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.2);
+}
+
+/* =========================================
+   ANALYSIS RESULT
+========================================= */
+
+.analysis-result {
+  margin-top: 20px;
+  padding: 28px;
+  border-radius: 20px;
+  background: #0f2038;
+  border: 1px solid rgba(96, 165, 250, 0.15);
+}
+
+.analysis-heading span {
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.analysis-heading h2 {
+  margin: 7px 0 22px;
+  color: #f8fafc;
+  font-size: 25px;
+}
+
+.analysis-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.analysis-item {
+  padding: 17px;
+  border-radius: 13px;
+  background: #132945;
+  border: 1px solid rgba(96, 165, 250, 0.1);
+}
+
+.analysis-item span {
+  display: block;
+  margin-bottom: 6px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.analysis-item strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #e2e8f0;
+  font-size: 18px;
+}
+
+.analysis-item small {
+  color: #64748b;
+}
+
+/* =========================================
+   RECOMMENDATION
+========================================= */
+
+.recommendation-card {
+  margin-top: 22px;
+  padding: 28px;
+  border-radius: 20px;
+  background: #0f2038;
+  border: 1px solid rgba(96, 165, 250, 0.15);
+}
+
+.recommendation-card > span {
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.recommendation-card h2 {
+  margin: 8px 0 8px;
+  color: #f8fafc;
+  font-size: 24px;
+}
+
+.recommendation-card p {
+  margin: 0;
+  max-width: 700px;
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.recommendation-card strong {
+  color: #cbd5e1;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+  .assessment-skills {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .assessment-page {
+    padding: 28px 14px 50px;
+  }
+
+  .assessment-header h1 {
+    font-size: 29px;
+  }
+
+  .assessment-skill-card {
+    padding: 20px;
+  }
+
+  .skill-score {
+    font-size: 23px;
+  }
+
+  .readiness-card {
+    flex-wrap: wrap;
+  }
+
+  .assessment-submit {
+    width: 100%;
+    margin-left: 0;
+  }
+}

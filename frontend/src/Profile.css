@@ -1,0 +1,1220 @@
+/* =========================================
+   SKILLSPHERE - PROFESSIONAL PROFILE
+========================================= */
+
+.profile-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 28px 80px;
+  color: #f8fafc;
+}
+
+/* =========================================
+   PROFILE HEADER
+========================================= */
+
+.profile-header-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #0b172b;
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+}
+
+.profile-cover {
+  height: 155px;
+  background:
+    linear-gradient(
+      135deg,
+      #1769aa 0%,
+      #2563eb 45%,
+      #4f46e5 100%
+    );
+}
+
+.profile-header-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 34px 32px;
+}
+
+.profile-avatar {
+  width: 112px;
+  height: 112px;
+  margin-top: -56px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 5px solid #0b172b;
+
+  background: linear-gradient(
+    135deg,
+    #60a5fa,
+    #6366f1
+  );
+
+  color: white;
+  font-size: 34px;
+  font-weight: 800;
+
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.35);
+}
+
+.profile-info {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.profile-info h1 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+}
+
+.profile-info p {
+  margin: 6px 0;
+  color: #dbeafe;
+  font-size: 17px;
+}
+
+.profile-location {
+  color: #94a3b8 !important;
+  font-size: 15px !important;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================================
+   EDIT PROFILE
+========================================= */
+
+.edit-button {
+  padding: 11px 18px;
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 10px;
+  background: #162d4b;
+  color: #bfdbfe;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.edit-button:hover {
+  background: #1d3a5f;
+  border-color: #60a5fa;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+/* =========================================
+   EDIT BOX
+========================================= */
+
+.profile-edit-box {
+  margin-top: 22px;
+  padding: 26px;
+
+  border-radius: 20px;
+
+  background: #0b172b;
+  border: 1px solid rgba(96, 165, 250, 0.18);
+}
+
+.profile-edit-box h2 {
+  margin: 0 0 20px;
+}
+
+.profile-edit-box label {
+  display: block;
+  margin: 14px 0 7px;
+  color: #cbd5e1;
+}
+
+.profile-edit-box input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border-radius: 10px;
+  border: 1px solid #263b5d;
+
+  background: #071225;
+  color: white;
+  outline: none;
+}
+
+.profile-edit-box input:focus {
+  border-color: #60a5fa;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.complete-button {
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #6366f1
+  );
+
+  color: white;
+  cursor: pointer;
+}
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.profile-stats > div {
+  position: relative;
+  overflow: hidden;
+
+  padding: 24px 15px;
+
+  text-align: center;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    145deg,
+    #101f38,
+    #0b172b
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.15);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.2s ease;
+}
+
+.profile-stats > div:hover {
+  transform: translateY(-3px);
+}
+
+.profile-stats > div::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #6366f1
+  );
+}
+
+.profile-stats span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.profile-stats strong {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 750;
+}
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+
+  margin-top: 24px;
+}
+
+.profile-card {
+  padding: 26px;
+
+  border-radius: 22px;
+
+  background: linear-gradient(
+    145deg,
+    #0d1d35,
+    #091629
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.14);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   CARD HEADINGS
+========================================= */
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.card-heading h2 {
+  margin: 5px 0 0;
+
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.label {
+  color: #60a5fa;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+}
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 48px;
+
+  padding: 0 15px;
+
+  border-radius: 12px;
+
+  background: rgba(30, 50, 80, 0.45);
+
+  border: 1px solid rgba(96, 165, 250, 0.08);
+
+  color: #e2e8f0;
+
+  transition: 0.2s ease;
+}
+
+.skills > div:hover {
+  background: rgba(37, 60, 96, 0.65);
+  transform: translateX(3px);
+}
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.project {
+  padding: 20px;
+  margin-top: 14px;
+
+  border-radius: 16px;
+
+  background: rgba(17, 35, 62, 0.7);
+
+  border: 1px solid rgba(96, 165, 250, 0.1);
+
+  transition: 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(96, 165, 250, 0.28);
+}
+
+.project h3 {
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.project p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  line-height: 1.6;
+}
+
+.project .tag {
+  display: inline-block;
+
+  margin: 12px 6px 0 0;
+
+  padding: 5px 10px;
+
+  border-radius: 8px;
+
+  background: rgba(99, 102, 241, 0.14);
+
+  color: #c7d2fe;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   EDUCATION
+========================================= */
+
+.education {
+  padding: 18px;
+  margin-top: 12px;
+
+  border-radius: 15px;
+
+  background: rgba(17, 35, 62, 0.65);
+
+  border: 1px solid rgba(96, 165, 250, 0.1);
+}
+
+.education h3 {
+  margin: 0 0 7px;
+  color: #ffffff;
+}
+
+.education p {
+  margin: 5px 0;
+  color: #94a3b8;
+}
+
+/* =========================================
+   CERTIFICATES
+========================================= */
+
+.certificate {
+  padding: 18px;
+  margin-top: 12px;
+
+  border-radius: 15px;
+
+  background: rgba(17, 35, 62, 0.65);
+
+  border: 1px solid rgba(96, 165, 250, 0.1);
+}
+
+.certificate h3 {
+  margin: 0 0 7px;
+  color: #ffffff;
+}
+
+.certificate p {
+  margin: 5px 0;
+  color: #94a3b8;
+}
+
+/* =========================================
+   ADD PROJECT
+========================================= */
+
+.add-button {
+  padding: 10px 17px;
+
+  border: 1px solid rgba(129, 140, 248, 0.4);
+  border-radius: 11px;
+
+  background: rgba(99, 102, 241, 0.13);
+
+  color: #c7d2fe;
+
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.add-button:hover {
+  background: rgba(99, 102, 241, 0.25);
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+  .profile-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .profile-page {
+    width: 94%;
+    padding: 25px 0 60px;
+  }
+
+  .profile-header-content {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0 20px 25px;
+  }
+
+  .profile-avatar {
+    margin-top: -48px;
+  }
+
+  .profile-info {
+    padding-top: 5px;
+  }
+
+  .profile-info h1 {
+    font-size: 26px;
+  }
+
+  .edit-button {
+    width: 100%;
+  }
+
+  .profile-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .profile-stats {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================
+   PROFILE HEADER POLISH
+========================================= */
+
+
+.profile-identity {
+  flex: 1;
+  min-width: 0;
+  padding: top 0;
+  transform: translateY(-8px)
+}
+
+.profile-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+  flex-wrap: wrap;
+}
+
+.profile-name h1 {
+  margin: 0;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.4px;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.profile-identity p {
+  margin: 0 0 7px;
+  color: #a8b5c7;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  top: -25px
+}
+
+.location {
+  display: inline-flex;
+  align-items: center;
+  color: #718096;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.profile-header-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0 30px 28px;
+  min-height: 145px;
+  position: relative;
+}
+
+.profile-identity {
+  flex: 1;
+  min-width: 0;
+  padding-top: 5px;
+  transform: translateY(-12px);
+}
+
+.profile-header-content .edit-button {
+  align-self: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 650px) {
+  .profile-header-content {
+    min-height: auto;
+  }
+
+  .profile-name {
+    gap: 7px;
+  }
+}
+/* =========================================
+   ABOUT ME POLISH
+========================================= */
+
+.about {
+  margin: 16px 0 0;
+  padding: 18px 20px;
+
+  border-left: 3px solid #4f8cff;
+  border-radius: 0 12px 12px 0;
+
+  background: rgba(30, 58, 95, 0.35);
+
+  color: #aebed3;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.profile-card > h2 {
+  margin: 7px 0 0;
+  color: #f8fafc;
+  font-size: 23px;
+}
+/* =========================================
+   PROFILE STATS POLISH
+========================================= */
+
+.profile-stats {
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.profile-stats > div {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 16px;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(24, 48, 80, 0.9),
+    rgba(12, 27, 48, 0.95)
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.12);
+  transition: all 0.2s ease;
+}
+
+.profile-stats > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #4f8cff;
+  opacity: 0.7;
+}
+
+.profile-stats > div:hover {
+  transform: translateY(-3px);
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-stats span {
+  display: block;
+  margin-bottom: 7px;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.profile-stats strong {
+  color: #f8fafc;
+  font-size: 25px;
+  font-weight: 750;
+}
+/* =========================================
+   PROJECT CARDS POLISH
+========================================= */
+
+.project {
+  padding: 18px;
+  margin-top: 14px;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(24, 48, 80, 0.7),
+    rgba(12, 27, 48, 0.85)
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.12);
+  transition: all 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-2px);
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(79, 140, 255, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.15);
+
+  font-size: 20px;
+}
+
+.project-title h3 {
+  color: #f8fafc;
+  margin: 0;
+}
+
+.project-content p {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.project-tags span {
+  display: inline-block;
+  padding: 5px 9px;
+  margin-right: 6px;
+
+  border-radius: 7px;
+
+  background: rgba(79, 140, 255, 0.1);
+  color: #93c5fd;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+/* =========================================
+   PROFILE COMPLETION POLISH
+========================================= */
+
+.completion {
+  color: #60a5fa;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.completion-bar {
+  width: 100%;
+  height: 9px;
+  margin: 18px 0 14px;
+
+  overflow: hidden;
+  border-radius: 999px;
+
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.completion-bar > div {
+  height: 100%;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #60a5fa
+  );
+
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.35);
+
+  transition: width 0.4s ease;
+}
+
+.muted {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.complete-button {
+  margin-top: 8px;
+  padding: 11px 18px;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.complete-button:hover {
+  background: #3b82f6;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 18px rgba(37, 99, 235, 0.25);
+}
+/* =========================================
+   EDUCATION POLISH
+========================================= */
+
+.education {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 18px;
+  padding: 18px;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(24, 48, 80, 0.7),
+    rgba(12, 27, 48, 0.85)
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.12);
+}
+
+.education-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(79, 140, 255, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.15);
+
+  font-size: 22px;
+}
+
+.education h3 {
+  margin: 0 0 5px;
+  color: #f8fafc;
+  font-size: 16px;
+}
+
+.education p {
+  margin: 0 0 5px;
+  color: #aebed3;
+  font-size: 14px;
+}
+
+.education span {
+  color: #64748b;
+  font-size: 12px;
+}
+/* =========================================
+   CERTIFICATIONS POLISH
+========================================= */
+
+.certificate {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 12px;
+  padding: 14px 16px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(24, 48, 80, 0.65),
+    rgba(12, 27, 48, 0.8)
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.1);
+  transition: all 0.2s ease;
+}
+
+.certificate:hover {
+  transform: translateX(3px);
+  border-color: rgba(96, 165, 250, 0.28);
+}
+
+.certificate-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.certificate h3 {
+  margin: 0 0 3px;
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.certificate span {
+  color: #64748b;
+  font-size: 12px;
+}
+/* =========================================
+   EDIT PROFILE POLISH
+========================================= */
+
+.profile-edit-box {
+  margin: 20px 0;
+  padding: 24px;
+
+  border-radius: 16px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(24, 48, 80, 0.95),
+    rgba(12, 27, 48, 0.98)
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.profile-edit-box h2 {
+  margin: 0 0 20px;
+  color: #f8fafc;
+  font-size: 21px;
+}
+
+.profile-edit-box label {
+  display: block;
+  margin: 14px 0 7px;
+
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.profile-edit-box input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 9px;
+
+  outline: none;
+
+  background: rgba(15, 23, 42, 0.75);
+  color: #f8fafc;
+
+  font-size: 14px;
+
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.profile-edit-box input:focus {
+  border-color: #4f8cff;
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.12);
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+/* =========================================
+   EDIT ACTION BUTTONS
+========================================= */
+
+.edit-actions .add-button {
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(30, 41, 59, 0.8);
+  color: #cbd5e1;
+}
+
+.edit-actions .add-button:hover {
+  background: rgba(51, 65, 85, 0.9);
+  color: #f8fafc;
+}
+
+.edit-actions .complete-button {
+  margin-top: 0;
+}
+/* =========================================
+   MOBILE PROFILE POLISH
+========================================= */
+
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .profile-page {
+    padding: 16px;
+  }
+
+  .profile-header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 0 20px 22px;
+  }
+
+  .profile-avatar {
+    margin-top: -35px;
+  }
+
+  .profile-header-content .edit-button {
+    align-self: flex-start;
+  }
+
+  .profile-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-card {
+    padding: 18px;
+  }
+
+  .card-heading {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .education {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile-stats > div {
+    padding: 16px 12px;
+  }
+
+  .profile-stats strong {
+    font-size: 22px;
+  }
+
+  .profile-name h1 {
+    font-size: 24px;
+  }
+
+  .edit-actions {
+    flex-direction: column;
+  }
+
+  .edit-actions button {
+    width: 100%;
+  }
+}
+/* =========================================
+   FINAL PROFILE SPACING POLISH
+========================================= */
+
+.profile-page {
+  color: #e2e8f0;
+}
+
+.profile-card + .profile-card {
+  margin-top: 18px;
+}
+
+.profile-card h2 {
+  letter-spacing: -0.3px;
+}
+
+.card-heading {
+  margin-bottom: 18px;
+}
+
+.label {
+  letter-spacing: 1.2px;
+  font-size: 11px;
+}
+
+.add-button,
+.edit-button {
+  white-space: nowrap;
+}
+
+.status {
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.project-content {
+  min-width: 0;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.project-tags {
+  margin-top: 10px;
+}
+/* Move profile name upward */
+.profile-name h1 {
+  position: relative;
+  top: -15px;
+}
+
+.profile-name .verified-badge {
+  position: relative;
+  top: -15px;
+}
+
+.profile-identity p {
+  position: relative;
+  top: -15px;
+}
+
+.profile-identity .location {
+  position: relative;
+  top: -15px;
+}
+.profile-name h1 {
+  position: relative;
+  top: -32px;
+}
+
+.profile-name .verified-badge {
+  position: relative;
+  top: -25px;
+}
+
+.profile-identity p {
+  position: relative;
+  top: -25px;
+}
+
+.profile-identity .location {
+  position: relative;
+  top: -25px;
+}
