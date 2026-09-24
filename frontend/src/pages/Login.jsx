@@ -29,8 +29,9 @@ const handleLogin = async (event) => {
    
 
     try {
-      const response = await fetch(
-  "https://skillsphere-t975.onrender.com/login",
+      const response = await 
+      fetch("https://skillsphere-t975.onrender.com/login",
+        
         {
           method: "POST",
           headers: {
@@ -208,6 +209,7 @@ onChange={(e) => setPassword(e.target.value)}
 
               <button
                 type="button"
+                onClick={() => handleRoleSelect("institution")}
                 className={
                   role === "institution"
                     ? "role-card active"
